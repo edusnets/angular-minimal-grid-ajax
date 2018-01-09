@@ -140,6 +140,10 @@
 				}
 			}
 
+			$scope.$watch('currentPage', function (page) {
+				$scope.changePaginate(page);
+			});
+
 			// local functions
 			function updatePagesTotal(totalItems) {
 				$scope.pages.total = []
@@ -194,10 +198,6 @@
 				val.class = 'sorting'
 			})
 
-			$scope.$watch('currentPage', function (page) {
-				$scope.changePaginate(page);
-			});
-
 			$scope.pages = {
 				first: 1,
 				last: 1,
@@ -222,6 +222,8 @@
 					paginationMax: '<?',
 					paginationRange: '<?',
 					currentPage: '<?',
+					currentOrderBy: '<?',
+					currentOrderDirection: '<?',
 					changeOrderByCallback: '&?onChangeOrderBy',
 					changePaginateCallback: '&?onChangePaginate',
 					clickRowCallback: '&?onClickRow'
