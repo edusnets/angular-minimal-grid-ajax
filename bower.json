@@ -1,0 +1,35 @@
+{
+  "name": "angular-minimal-grid-ajax",
+  "authors": [
+    "Saul Luz <saulsluz@gmail.com>",
+    "Eduardo Martins <edusnets@gmail.com>"
+  ],
+  "description": "Cópia do pacote original angular-minimal-grid com algumas modificações.",
+  "main": [
+    "js/minimal-grid.js",
+    "css/minimal-grid.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/edusnets/angular-minimal-grid-ajax.git"
+  },
+  "keywords": [
+    "data",
+    "grid",
+    "angular",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.x.x",
+    "angular": "^1.x.x"
+  }
+}
